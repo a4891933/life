@@ -1,0 +1,35 @@
+{
+	"groups": [
+		{
+			"keys": "description_json,base_shose_png,base_cloth_png,base_hair_png,base_role_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"name": "description_json",
+			"type": "json",
+			"url": "config/description.json"
+		},
+		{
+			"name": "base_shose_png",
+			"type": "image",
+			"url": "assets/base_shose.png"
+		},
+		{
+			"name": "base_cloth_png",
+			"type": "image",
+			"url": "assets/base_cloth.png"
+		},
+		{
+			"name": "base_hair_png",
+			"type": "image",
+			"url": "assets/base_hair.png"
+		},
+		{
+			"name": "base_role_png",
+			"type": "image",
+			"url": "assets/base_role.png"
+		}
+	]
+}

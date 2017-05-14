@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Main" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="RoleGroup" width="720" height="1280" x="0" y="0">
+		<e:Image id="body" source="base_role_png" x="136" y="265.33" scaleX="1" scaleY="1"/>
+		<e:Image id="dress" source="base_cloth_png" x="151.26" y="388.95" scaleX="1" scaleY="1"/>
+		<e:Image id="shoe" source="base_shose_png" x="118.4" y="923.2" scaleX="1" scaleY="1"/>
+		<e:Image id="hair" source="base_hair_png" x="54.76" y="238.27" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>
