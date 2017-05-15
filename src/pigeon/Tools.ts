@@ -115,6 +115,10 @@ module pigeon {
      * @platform Web,Native
      */
     export module Res {
+        export function getVirtualUrl (path:string) {
+            return RES.getVersionController().getVirtualUrl(path);
+        }
+
         export function getRes(item, url) {
             if (!item) {
                 Log.error("加载图片失败,传入了错误的item")
