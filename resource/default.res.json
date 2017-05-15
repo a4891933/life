@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,base_shose_png,base_cloth_png,base_hair_png,base_role_png",
+			"keys": "description_json,base_shose_png,base_cloth_png,base_hair_png,base_role_png,bg_0_png",
 			"name": "preload"
 		}
 	],
@@ -30,6 +30,11 @@
 			"name": "base_role_png",
 			"type": "image",
 			"url": "assets/base_role.png"
+		},
+		{
+			"name": "bg_0_png",
+			"type": "image",
+			"url": "assets/bg_0.png"
 		}
 	]
 }

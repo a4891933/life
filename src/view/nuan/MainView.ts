@@ -1,7 +1,7 @@
 module nuan {
 	export class MainView extends pg.BaseComponent{
 		public constructor() {
-			super("resource/skins/Main.exml");
+			super("resource/skins/main_skin.exml");
 		}
 		public onEnter () {
 
@@ -11,3 +11,11 @@ module nuan {
 		}
 	}
 }
+
+
+
+
+
+
+
+

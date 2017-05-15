@@ -87,11 +87,12 @@ module pigeon {
         }
     }
     export class SingleTimerCore {
-        public static create(delay, callback, target) {
+        public static create(delay, callback, target):SingleTimer {
             var self = SingleTimerCore.getIns();
             var id = self._randId();
             var timer = new SingleTimer(id, delay, callback, target);
             self._add(timer);
+            return timer;
         }
         public static remove(timer: SingleTimer) {
             SingleTimerCore.getIns()._remove(timer);

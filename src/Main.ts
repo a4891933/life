@@ -18,3 +18,12 @@ class Main extends egret.DisplayObjectContainer {
         pg.StageManager.popDisplayObjectContainer(new nuan.MainView());
     }
 }
+
+
+
+
+
+
+
+
+
