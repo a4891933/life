@@ -5,8 +5,6 @@ module pigeon {
         public items : Array<string>;
         public callback : Function;
         public target : any;
-        
-
     }
     export class ViewBind {
         private eventList : Array<any>;//监听列表

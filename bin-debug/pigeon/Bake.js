@@ -141,3 +141,4 @@ var pigeon;
     pigeon.test = test;
     __reflect(test.prototype, "pigeon.test");
 })(pigeon || (pigeon = {}));
+//# sourceMappingURL=Bake.js.map

@@ -1,6 +1,7 @@
 module pigeon {
 	export abstract class BaseComponent extends eui.Component {
 		private pre = "";
+		protected dataProvider: eui.ArrayCollection;
 		public constructor(skinName: string) {
 			super();
 			if (skinName) {

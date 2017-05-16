@@ -100,6 +100,7 @@ var pigeon;
             var id = self._randId();
             var timer = new SingleTimer(id, delay, callback, target);
             self._add(timer);
+            return timer;
         };
         SingleTimerCore.remove = function (timer) {
             SingleTimerCore.getIns()._remove(timer);
@@ -165,3 +166,4 @@ var pigeon;
     pigeon.SingleTimerCore = SingleTimerCore;
     __reflect(SingleTimerCore.prototype, "pigeon.SingleTimerCore");
 })(pigeon || (pigeon = {}));
+//# sourceMappingURL=Timer.js.map

@@ -25,3 +25,4 @@ var pigeon;
     pigeon.BaseComponent = BaseComponent;
     __reflect(BaseComponent.prototype, "pigeon.BaseComponent");
 })(pigeon || (pigeon = {}));
+//# sourceMappingURL=BaseComponent.js.map

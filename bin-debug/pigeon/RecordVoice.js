@@ -255,3 +255,4 @@ var pigeon;
     pigeon.RecordStruct = RecordStruct;
     __reflect(RecordStruct.prototype, "pigeon.RecordStruct");
 })(pigeon || (pigeon = {}));
+//# sourceMappingURL=RecordVoice.js.map

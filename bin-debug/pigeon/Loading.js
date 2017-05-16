@@ -312,3 +312,4 @@ var pigeon;
         __reflect(AssetAdapter.prototype, "pigeon.Loading.AssetAdapter", ["eui.IAssetAdapter"]);
     })(Loading = pigeon.Loading || (pigeon.Loading = {}));
 })(pigeon || (pigeon = {}));
+//# sourceMappingURL=Loading.js.map

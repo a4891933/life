@@ -1,51 +1,61 @@
-//////////////////////////////////////////////////////////////////////////////////////
-//
-//  Copyright (c) 2014-present, Egret Technology.
-//  All rights reserved.
-//  Redistribution and use in source and binary forms, with or without
-//  modification, are permitted provided that the following conditions are met:
-//
-//     * Redistributions of source code must retain the above copyright
-//       notice, this list of conditions and the following disclaimer.
-//     * Redistributions in binary form must reproduce the above copyright
-//       notice, this list of conditions and the following disclaimer in the
-//       documentation and/or other materials provided with the distribution.
-//     * Neither the name of the Egret nor the
-//       names of its contributors may be used to endorse or promote products
-//       derived from this software without specific prior written permission.
-//
-//  THIS SOFTWARE IS PROVIDED BY EGRET AND CONTRIBUTORS "AS IS" AND ANY EXPRESS
-//  OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
-//  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
-//  IN NO EVENT SHALL EGRET AND CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
-//  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-//  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;LOSS OF USE, DATA,
-//  OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-//  LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-//  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
-//  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-//
-//////////////////////////////////////////////////////////////////////////////////////
+// class CollectionEventExample extends egret.Sprite {
+//     constructor() {
+//         super();
+//         var arr = [2, 1, 3,1];
+//         var arrayCollection = new eui.ArrayCollection();
+//         arrayCollection.source = arr;
+//         arrayCollection.addEventListener(eui.CollectionEvent.COLLECTION_CHANGE, this.onCollectionChange, this);
+//         arrayCollection.addItem(5);//add
+//         arrayCollection.addItemAt(6, 1);//add
+//         arrayCollection.source.sort();
+//         arrayCollection.refresh();//refersh
+//         arrayCollection.removeItemAt(2);//remove
+//         arrayCollection.removeAll();//remove
+//         arrayCollection.source = [1, 2, 3];//reset
+//         arrayCollection.replaceItemAt(7, 1);//replace
+//         arrayCollection.source[1] = 8;
+//         arrayCollection.itemUpdated(1);//update
 
-class LoadingUI extends egret.Sprite {
-
-    public constructor() {
-        super();
-        this.createView();
-    }
-
-    private textField:egret.TextField;
-
-    private createView():void {
-        this.textField = new egret.TextField();
-        this.addChild(this.textField);
-        this.textField.y = 300;
-        this.textField.width = 480;
-        this.textField.height = 100;
-        this.textField.textAlign = "center";
-    }
-
-    public setProgress(current:number, total:number):void {
-        this.textField.text = `Loading...${current}/${total}`;
-    }
-}
+//         this.initData();
+//         this.refresh();
+//         this.orgArray.push(4);
+//         this.refresh();
+//     }
+//     private orgArray : Array<number>;
+//     private initData () {
+//         this.orgArray = [1,2,3];
+//     }
+//     private refresh () {
+//         var self = this;
+//         var arr = this.orgArray;
+//         arr.forEach(element => {
+//             var label = new eui.Label();
+//             label.text = element.toString();
+//             label.x = element * 100;
+//             label.y = element * 100;
+//             self.addChild(label);
+//         });
+//     }
+//     private onCollectionChange(e: eui.CollectionEvent) {
+//         switch (e.kind) {
+//             case eui.CollectionEventKind.ADD:
+//                 egret.log("arrayCollection add" + " " + e.currentTarget.source + " " + e.location);
+//                 break;
+//             case eui.CollectionEventKind.REFRESH:
+//                 egret.log("arrayCollection refersh" + " " + e.currentTarget.source + " " + e.location);
+//                 break;
+//             case eui.CollectionEventKind.REMOVE:
+//                 egret.log("arrayCollection remove" + " " + e.currentTarget.source + " " + e.location);
+//                 break;
+//             case eui.CollectionEventKind.REPLACE:
+//                 egret.log("arrayCollection replace" + " " + e.currentTarget.source + " " + e.location);
+//                 break;
+//             case eui.CollectionEventKind.RESET:
+//                 egret.log("arrayCollection reset" + " " + e.currentTarget.source + " " + e.location);
+//                 break;
+//             case eui.CollectionEventKind.UPDATE:
+//                 egret.log("arrayCollection update" + " " + e.currentTarget.source + " " + e.location);
+//                 break;
+//         }
+//     }
+// }

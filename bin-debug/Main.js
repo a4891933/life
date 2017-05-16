@@ -22,7 +22,10 @@ var Main = (function (_super) {
         }, null, this);
     };
     Main.prototype.createGameScene = function () {
-        pg.StageManager.popDisplayObjectContainer(new nuan.MainView());
+        // pg.StageManager.popDisplayObjectContainer(new nuan.MainView());
+        setTimeout(function () {
+            pg.StageManager.popDisplayObjectContainer(new CollectionEventExample());
+        }, 300);
     };
     return Main;
 }(egret.DisplayObjectContainer));
