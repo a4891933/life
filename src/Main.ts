@@ -15,10 +15,10 @@ class Main extends egret.DisplayObjectContainer {
         }, null, this);
     }
     private createGameScene(): void {
-        // pg.StageManager.popDisplayObjectContainer(new nuan.MainView());
-        setTimeout(() => {
-            pg.StageManager.popDisplayObjectContainer(new CollectionEventExample());
-        }, 300);
+        pg.StageManager.popDisplayObjectContainer(new nuan.MainView());
+        // setTimeout(() => {
+        //     pg.StageManager.popDisplayObjectContainer(new CollectionEventExample());
+        // }, 300);
     }
 }
 
